@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #000;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    position:fixed;
+    top: 20px;
+    width: 600px;
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 10;
+    justify-content: flex-start;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding: 0 20px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+    padding: 0 10px;
+    z-index: 2;
+    margin-right: auto;
+}
+
+nav span {
+    position: absolute;
+    top: 5%;
+    left: 170px;
+    width: 70px;
+    height: 90%;
+    background: linear-gradient(45deg, #ff0000, #530101);
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+
+nav a:nth-child(2):hover ~ span {
+    left: 190px;
+    width: 70px;
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: 248px;
+    width: 80px;
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: 336px;
+    width: 90px;
+}
+
+nav a:nth-child(5):hover ~ span {
+    left: 436px;
+    width: 90px;
+}
+
+nav a:nth-child(6):hover ~ span {
+    left: 525px;
+    width: 80px;
+}
+
+video{
+        width: 100vw;
+        height: 90vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        margin-top: 80px;
+     }
