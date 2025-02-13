@@ -1,0 +1,218 @@
+/* minecraft.css */
+
+body {
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #000;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 1068px;
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 10;
+    justify-content: flex-start;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding: 0 40px;
+    z-index: 1;
+    transition: 0.3s;
+    width: 140px;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+    padding: 0 10px;
+    z-index: 2;
+    margin-right: auto;
+}
+
+nav span {
+    position: absolute;
+    top: 2%;
+    left: 80px;
+    width: 100px;
+    height: 120%;
+    background: linear-gradient(45deg, #ff0000, #530101);
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+nav a:nth-child(2):hover ~ span {
+    left:85px;
+    width: 90px;
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: 270px;
+    width: 110px;
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: 468px;
+    width: 150px;
+}
+
+nav a:nth-child(5):hover ~ span {
+    left:680px;
+    width: 120px;
+}
+
+nav a:nth-child(6):hover ~ span {
+    left: 885px;
+    width: 110px;
+}
+
+.search {
+    position: absolute;
+    left: 1200px;
+    right: 10px;
+    width: max-content ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #292727;
+    margin-top: -19px;
+    z-index: 1000;
+    transition: background 0.35s;
+}
+
+.search:focus-within {
+    background: #c0bfbf;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* فيديو اللعبة + معلوماتها */
+.game-section {
+    display: flex;
+    align-items: flex-start; /* لمحاذاة العناصر أعلى */
+    justify-content: center;
+    padding: 120px;
+    gap: 50px; /* مسافة بين الفيديو والمعلومات */
+}
+
+.game-info {
+    max-width: 50%;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #f4b0b0bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* لمحاذاة النصوص أعلى */
+}
+
+.game-info h2 {
+    margin: 0; /* إزالة المسافة العلوية */
+    font-size: 80px; /* تعديل حجم العنوان */
+    color: #ff0000; /* لون Minecraft */
+}
+
+.game-info p {
+    margin-top: 20px; /* مسافة بين العنوان والفقرة */
+}
+
+
+.game-video {
+    width: 55%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(125, 0, 0);
+}
+
+
+
+/* فاصل (صورة طويلة) */
+.divider img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    display: block;
+    margin: 70px 0;
+}
+
+.characters-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(141, 3, 3);
+    width: 80%;
+}
+
+.character img {
+    width: 350px;
+    height: 350;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.character img:hover {
+    transform: scale(1.2); /* تكبير الصورة بنسبة 20% عند تمرير الفأرة */
+}
+
+
+.character-info {
+    font-size: 25px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.character-info h2 {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+/* الفوتر */
+footer {
+    background: #333;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
