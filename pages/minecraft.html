@@ -3,35 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Minecraft</title>
-    <link rel="stylesheet" href="../assets/styles/minecraft.css">             
+    <link rel="stylesheet" href="../assets/styles/styles.css">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />           
 </head>
 <body>
-    <nav>
-        <div class="menu-icon">☰</div>
+    <div id="wrapper">
 
-        <a href="../index.html">Home</a>
-        <a href="../pages/news.html">News</a>
-        <a href="../pages/about.html">About us</a>
-        <a href="#">Games</a>
-        <a href="../pages/login.html">Login</a>
-
-        <span></span>
-    </nav>
-
-    <form>
-        <div class="search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input class="search-input" type="search" placeholder="Search">
-        </div>
-    </form>
+        <header id="header">
+    
+            <nav id="Navigation">
+                <ul class="links">
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/news.html">News</a>
+                    <a href="../pages/about.html">About us</a>
+                    <a href="../pages/games.html">Games</a>
+                    <a href="../pages/login.html">Login</a>
+                    <span> </span>
+                </ul>
+            </nav>
+    
+                <label>
+                    <input type="checkbox" id="menu-toggle">
+                    <div class="toggle">
+                        <div class="top_line"></div>
+                        <div class="top_line"></div>
+                        <div class="top_line"></div>
+                        
+                    </div>
+                    <div class="slide">
+                        <h1>MENU</h1>
+                        <ul>
+                            <li><a href="../index.html"> <i class="fas fa-tv"></i> Home </a></li>
+                            <li><a href="../pages/profile.html"> <i class="fas fa-user"></i> Profile </a></li>
+                            <li><a href="../pages/news.html"> <i class="fas fa-newspaper"></i> News </a></li>
+                            <li><a href="../pages/about.html"> <i class="fas fa-info-circle"></i> About Us </a></li>
+                            <li><a href="../pages/games.html"> <i class="fas fa-gamepad"></i> Games </a></li>
+                            <li><a href="../pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login </a></li>
+                        </ul>
+                    </div>
+                </label>
+                <form>
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Search">
+                    </div>
+                </form>
+        </header>
     <section class="game-section">
         <video autoplay muted loop class="game-video">
             <source src="../assets/videos/minecraft.mp4" type="video/mp4">
         </video>
         <div class="game-info">
             <h2>Minecraft</h2>
-            <p>Minecraft is a building and exploration game in an open world,
-             where players gather resources to survive or build freely in Creative mode.</p>
+            <p>Minecraft is a sandbox game where players explore, build, and survive in a blocky world.
+                 It features Survival and Creative modes, offering endless possibilities.
+                 The game is known for its pixelated graphics and multiplayer experience.</p>
         </div>
     </section>
     <div class="divider">
@@ -39,7 +66,7 @@
     </div>
     <h2 class="characters-title">Minecraft Characters</h2>
     <section class="characters">
-        <div class="character">
+        <div class="character-minecraft">
             <img src="../assets/images/steve minecraft.png" alt="Steve">
             <div class="character-info">
                 <h2>Steve</h2>
@@ -48,7 +75,7 @@
             </div>
         </div>
 
-        <div class="character">
+        <div class="character-minecraft">
             <img src="../assets/images/alex minecraft.png" alt="Alex">
             <div class="character-info">
                 <h2>Alex</h2>
@@ -56,7 +83,7 @@
                 <p>Appearance: Orange hair, green shirt, brown pants.</p>
             </div>
         </div>
-        <div class="character">
+        <div class="character-minecraft">
             <img src="../assets/images/creeper minecraft.png" alt="Creeper">
             <div class="character-info">
                 <h2>Creeper</h2>
@@ -76,19 +103,18 @@
             </div>
             <div class="footerNav">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/news.html">News</a></li>
-                    <li><a href="../pages/about.html">About us</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="../pages/login.html">Login</a></li>
+                    <li> <a href="../pages/index.html"> Home</a> </li>
+                    <li> <a href=""> News</a> </li>
+                    <li> <a href="../pages/about.html"> about us</a> </li>
+                    <li> <a href="../pages/sign up.html"> sign up</a> </li>
+                    <li> <a href="../pages/login.html"> login</a> </li>
                 </ul>
             </div>
+            <div class="footerBottom ">
+                <p>Copyright &copy;2025; Designed by Aisha and Farah </p>
+            </div>
         </div>
-    
-        <div class="fotterBottom">
-            <p>Copyright &copy;2025; Designed by Aisha and Farah</p>
-        </div>
-    </footer>
+    </footer>
 </body>
 </html>
 

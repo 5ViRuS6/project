@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Valorant</title>
-    <link rel="stylesheet" href="../assets/styles/styles.css"> 
-    <link rel="stylesheet" href="../assets/styles/ta.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="login">
     <div id="wrapper">
 
         <header id="header">
@@ -51,50 +51,29 @@
                     </div>
                 </form>
         </header>
-    <section class="game-section">
-        <video autoplay muted loop class="game-video" controls>
-            <source src="../assets/videos/VALORANT.mp4" type="video/mp4">
-        </video>
-        <div class="game-info">
-            <h2>Valorant</h2>
-            <p>Valorant is a competitive first-person shooter where players use unique characters (Agents)
-             with special abilities to compete in modes like Plant the Spike.      
-            The game focuses on strategy and teamwork.
+<div class="title">
+    <h1>GAMES</h1>
+</div>
+    <div class="games-container">
+        <div class="game" onclick="location.href='csgo.html'">
+            <img src="../assets/images/CSGO.png" alt="csgo">
         </div>
-    </section>
-    <div class="divider">
-        <img src="../assets/images/valorant.avif" alt="Divider">
+        <div class="game" onclick="location.href='lol.html'">
+            <img src="../assets/images/LOL.png" alt="LOL">
+        </div>
+        <div class="game" onclick="location.href='valorant.html'">
+            <img src="../assets/images/VALORANT.png" alt="valorant">
+        </div>
+        <div class="game" onclick="location.href='fortnite.html'">
+            <img src="../assets/images/FORTNITE.png" alt="fortnite">
+        </div>
+        <div class="game" onclick="location.href='cod.html'">
+            <img src="../assets/images/COD.png" alt="cod">
+        </div>
+        <div class="game" onclick="location.href='minecraft.html'">
+            <img src="../assets/images/MINECRAFT.png" alt="Minecraft">
+        </div>
     </div>
-    <h2 class="characters-title">Champions</h2>
-    <section class="characters">
-        <div class="character-valorant">
-            <img src="../assets/images/jett valorant.png" alt="jett">
-            <div class="character-info">
-                <h2>Jett</h2>
-                <p>Abilities: Super speed, air dashes (Dash), and the ability to jump in the air.</p>
-                <p>Fame: An icon in competitive gaming, perfect for players with fast reflexes.</p>
-                <p>Ultimate Ability: Blade Storm – Throws precise and deadly knives.</p>
-            </div>
-        </div>
-        <div class="character-valorant">
-            <img src="../assets/images/reyna valorant.png" alt="Reyna">
-            <div class="character-info">
-                <h2>Reyna</h2>
-                <p>Abilities: Restores health or fades temporarily after eliminating enemies.</p>
-                <p>Fame: Ideal for players who rely on individual aiming skills.</p>
-                <p>Ultimate Ability: Empress – Significantly boosts her speed and combat power.</p>
-            </div>
-        </div>
-        <div class="character-valorant">
-            <img src="../assets/images/phoenix valorant.png" alt="phoenix">
-            <div class="character-info">
-                <h2>Phoenix</h2>
-                <p>Abilities: Fire control, self-healing, and creating fire walls to block vision.</p>
-                <p>Fame: A versatile and easy-to-learn character.</p>
-                <p>Ultimate Ability: Run It Back – Allows him to return to life if killed while the ability is active.</p>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="footerContainer">
             <div class="socialIcons">
@@ -107,7 +86,7 @@
             <div class="footerNav">
                 <ul>
                     <li> <a href="../pages/index.html"> Home</a> </li>
-                    <li> <a href="../pages/news.html"> News</a> </li>
+                    <li> <a href=""> News</a> </li>
                     <li> <a href="../pages/about.html"> about us</a> </li>
                     <li> <a href="../pages/sign up.html"> sign up</a> </li>
                     <li> <a href="../pages/login.html"> login</a> </li>
@@ -117,6 +96,6 @@
                 <p>Copyright &copy;2025; Designed by Aisha and Farah </p>
             </div>
         </div>
-    </footer>
+    </footer>
 </body>
 </html>
