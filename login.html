@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's heaven-login</title>
+    <link rel="stylesheet" href="../assets/styles/login.css">
+</head>
+<body>
+<div class="box">
+    <form action="login.html" method="GET"> 
+
+    <form action="profile.html">
+        <h2>Sign in</h2>
+        <div class="inputBox">
+            <input type="text" required pattern=".{3,30}" title="Username, email, or phone number (3-30 characters)">
+            <span>UserName / Email / Phone</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" required pattern="(?=.*[A-Z])(?=.*\d).{6,30}" title="Password must be 6-30 characters, contain at least one uppercase letter and one number">
+            <span>Password</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="forgetpass.html">Forget Password</a>
+            <a href="sign up.html">Signup</a>
+        </div>
+        <input type="submit" value="login">
+    </form>
+</div>
+</body>
+</html>
